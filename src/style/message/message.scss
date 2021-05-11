@@ -1,0 +1,56 @@
+.elyn-message {
+  display: inline-block;
+	position: fixed;
+	box-sizing: border-box;
+	height: 40px;
+	padding: 10px 22px;
+	border-radius: 4px;
+  top: 50px;
+  left: 50%;
+	transform: translateX(-50%);
+  font-size: 14px;
+	line-height: 20px;
+	color: $color-text-default;
+	background-color: $color-white;
+	border: 1px solid $border-color-base;
+	box-shadow: $box-shadow-base;
+	> p {
+		margin: 0;
+		padding: 0;
+	}
+	.iconfont {
+		font-size: 14px;
+		line-height: 20px;
+	}
+	&.elyn-message__success {
+		.iconfont {
+			color: $color-success;
+		}
+	}
+  &.elyn-message__info{
+		.iconfont {
+			color: $color-info;
+		}
+	}
+	&.elyn-message__warning{
+		.iconfont {
+			color: $color-warning;
+		}
+	}
+	&.elyn-message__error {
+		.iconfont {
+			color: $color-error;
+		}
+	}
+	&.elyn-message-enter, &.elyn-message-leave-to {
+		opacity: 0;
+		transform: translate(-50%, -100%)
+	}
+	&.elyn-message-enter-to, &.elyn-message-leave {
+		opacity: 1;
+		transform: translateY(-50%, 0%)
+	}
+	&.elyn-message-enter-active, &.elyn-message-leave-active {
+		transition: all .3s cubic-bezier(.55,0,.1,1);
+	}
+}

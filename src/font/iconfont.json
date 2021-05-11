@@ -1,0 +1,51 @@
+{
+  "id": "1721652",
+  "name": "uni-app-video",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "4037657",
+      "name": "叉-圆-s",
+      "font_class": "cha-yuan-s",
+      "unicode": "e7ce",
+      "unicode_decimal": 59342
+    },
+    {
+      "icon_id": "4037658",
+      "name": "勾-圆-s",
+      "font_class": "gou-yuan-s",
+      "unicode": "e7cf",
+      "unicode_decimal": 59343
+    },
+    {
+      "icon_id": "4037708",
+      "name": "警告-圆-s",
+      "font_class": "jinggao-yuan-s",
+      "unicode": "e7d1",
+      "unicode_decimal": 59345
+    },
+    {
+      "icon_id": "1418250",
+      "name": "loading",
+      "font_class": "loading",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "851703",
+      "name": "查找",
+      "font_class": "chazhao",
+      "unicode": "e617",
+      "unicode_decimal": 58903
+    },
+    {
+      "icon_id": "8843574",
+      "name": "加",
+      "font_class": "jia",
+      "unicode": "e645",
+      "unicode_decimal": 58949
+    }
+  ]
+}

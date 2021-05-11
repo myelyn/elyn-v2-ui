@@ -1,0 +1,40 @@
+.elyn-link {
+	position: relative;
+	display: inline-flex;
+	font-size: 14px;
+	text-decoration: none;
+	cursor: pointer;
+	&.elyn-link__default {
+		color: #666;
+	}
+	&.elyn-link__primary {
+		color: skyblue;
+	}
+	&.elyn-link__error {
+		color: red;
+	}
+	&.elyn-link__disabled {
+		color: #999;
+		cursor: not-allowed;
+	}
+	>.iconfont, >.elyn-link__inner {
+		font-size: 14px;
+		line-height: 1;
+	}
+	>.iconfont {
+		margin-right: 2px;
+	}
+	&.elyn-link__underline {
+		&:hover {
+			&:after {
+				content: "";
+				position: absolute;
+				left: 0;
+				right: 0;
+				height: 0;
+				bottom: 0;
+				border-bottom: 1px solid skyblue;
+			}
+		}
+	}
+}

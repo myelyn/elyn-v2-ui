@@ -1,0 +1,3 @@
+rules:
+  "no-new": "off"
+  "no-labels": [2, {"allowLoop": true}]
