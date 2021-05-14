@@ -1,15 +1,15 @@
 <template>
 	<div>
-		<x-link @click="handleClick" type="primary" icon="iconjia" underline>link</x-link>
+		<y-link @click="handleClick" type="primary" icon="iconjia" underline>link</y-link>
 	</div>
 	
 </template>
 
 <script>
-	import xLink from '../src/index.js'
+	import yLink from '../src/index.js'
 	
 	export default {
-		components: { xLink },
+		components: { yLink },
 		methods: {
 			handleClick () {
 				console.log('a')

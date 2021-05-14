@@ -9,8 +9,8 @@
 
 <script>
 	import Vue from 'vue'
-	import xMessage from '../src/index.js'
-	Vue.prototype.$message = xMessage;
+	import yMessage from '../src/index.js'
+	Vue.prototype.$message = yMessage;
 	
 	export default {
 		data() {

@@ -20,7 +20,7 @@
 </template>
 <script>
 export default {
-  name: "xMessage",
+  name: "yMessage",
   data () {
 		return {
 			type: '',

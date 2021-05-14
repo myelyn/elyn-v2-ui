@@ -1,7 +1,7 @@
-import xButton from './source/main.vue'
+import yButton from './source/main.vue'
 
-xButton.install = function(Vue) {
-	Vue.component(xButton.name, xButton)
+yButton.install = function(Vue) {
+	Vue.component(yButton.name, yButton)
 }
 
-export default xButton
+export default yButton

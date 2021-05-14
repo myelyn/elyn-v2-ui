@@ -18,7 +18,7 @@
 
 <script>
 	export default {
-		name: 'xLink',
+		name: 'yLink',
 		props: {
 			type: {
 				type: String,

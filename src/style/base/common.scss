@@ -1,0 +1,74 @@
+.elyn-base-arrow {
+	position: absolute;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	z-index: 101;
+	&:after {
+		display: block;
+		z-index: 101;
+		position: absolute;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		content: "";
+	}
+}
+.elyn-poptip {
+	&[x-placement^="top"] {
+		margin-bottom: $offset-arrow;
+		& > .elyn-base-arrow {
+			bottom: -$small-border-arrow;
+			border-width: $offset-arrow $large-border-arrow 0 $large-border-arrow;
+			border-color: $color-white transparent transparent transparent;
+			&::after {
+				bottom: $offset-arrow-after;
+				left: -$large-border-arrow;
+				border-width: $small-border-arrow $large-border-arrow 0 $large-border-arrow;
+				border-color: $color-white transparent transparent transparent;
+			}
+		}
+	}
+	&[x-placement^="bottom"] {
+		margin-top: $offset-arrow;
+		& > .elyn-base-arrow {
+			top: -$small-border-arrow;
+			border-width: 0 $large-border-arrow $offset-arrow $large-border-arrow;
+			border-color: transparent transparent $color-white transparent;
+			&::after {
+				top: $offset-arrow-after;
+				left: -$large-border-arrow;
+				border-width: 0 $large-border-arrow $small-border-arrow $large-border-arrow;
+				border-color: transparent transparent $color-white transparent;
+			}
+		}
+	}
+	&[x-placement^="right"] {
+		margin-left: $offset-arrow;
+		& > .elyn-base-arrow {
+			left: -$small-border-arrow;
+			border-width: $large-border-arrow $offset-arrow $large-border-arrow 0;
+			border-color: transparent $color-white transparent transparent;
+			&::after {
+				left: $offset-arrow-after;
+				top: -$large-border-arrow;
+				border-width: $large-border-arrow $small-border-arrow $large-border-arrow 0;
+				border-color: transparent $color-white transparent transparent;
+			}
+		}
+	}
+	&[x-placement^="left"] {
+		margin-right: $offset-arrow;
+		& > .elyn-base-arrow {
+			right: -$small-border-arrow;
+			border-width: $large-border-arrow 0 $large-border-arrow $offset-arrow;
+			border-color: transparent transparent transparent $color-white;
+			&::after {
+				right: $offset-arrow-after;
+				top: -$large-border-arrow;
+				border-width: $large-border-arrow 0 $large-border-arrow $small-border-arrow;
+				border-color: transparent transparent transparent $color-white;
+			}
+		}
+	}
+}

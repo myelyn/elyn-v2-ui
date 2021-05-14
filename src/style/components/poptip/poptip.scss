@@ -1,0 +1,14 @@
+.elyn-poptip {
+	background: $color-white;
+	min-width: 130px;
+	min-height: 70px;
+	border-radius: 2px;
+	border: 1px solid $border-color-light;
+	padding: 12px;
+	z-index: 100;
+	color: $color-text-default;
+	line-height: 1.5;
+	text-align: justify;
+	-webkit-box-shadow: 0 2px 8px 0 rgb(0 0 0 / 14%);
+	box-shadow: 0 2px 8px 0 rgb(0 0 0 / 14%);
+}

@@ -1,7 +1,7 @@
-import xLink from './source/main.vue'
+import yLink from './source/main.vue'
 
-xLink.install = function(Vue) {
-	Vue.component(xLink.name, xLink)
+yLink.install = function(Vue) {
+	Vue.component(yLink.name, yLink)
 }
 
-export default xLink
+export default yLink

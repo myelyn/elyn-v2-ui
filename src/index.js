@@ -1,13 +1,13 @@
-import xLink from '../packages/link/src';
-import xButton from '../packages/button/src';
-import xMessage from '../packages/message/src';
+import yLink from '../packages/link/src';
+import yButton from '../packages/button/src';
+import yMessage from '../packages/message/src';
 
 
 import './style/index.scss'
 
 const components = {
-	xLink,
-	xButton
+	yLink,
+	yButton
 }
 
 const install = function(Vue, opt = {}) {
@@ -15,7 +15,7 @@ const install = function(Vue, opt = {}) {
 		Vue.component(component.name, component)
 	})
 	
-	Vue.$message = Vue.prototype.$message = xMessage
+	Vue.$message = Vue.prototype.$message = yMessage
 
 }
 
@@ -26,5 +26,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export default {
   install,
-  xLink
+  yLink,
+	yButton,
+	yMessage
 }

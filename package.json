@@ -1,6 +1,6 @@
 {
-  "name": "elyn-vue-ui",
-  "version": "1.0.0",
+  "name": "elyn-ui",
+  "version": "1.0.2",
   "description": "",
   "main": "lib/elyn-ui.min.js",
   "style": "lib/elyn-ui.min.css",
@@ -43,5 +43,9 @@
     "webpack": "^4.39.1",
     "webpack-cli": "^3.3.12",
     "webpack-merge": "^4.1.3"
+  },
+  "dependencies": {
+    "deepmerge": "^4.2.2",
+    "popper.js": "^1.16.1"
   }
 }
