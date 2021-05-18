@@ -1,13 +1,16 @@
-import yLink from '../packages/link/src';
-import yButton from '../packages/button/src';
-import yMessage from '../packages/message/src';
+import { yLink } from '../packages/link/src';
+import { yButton } from '../packages/button/src';
+import { yMessage } from '../packages/message/src';
+import { yPoptip } from '../packages/poptip/src';
+import { yTooltip } from '../packages/tooltip/src';
 
 
 import './style/index.scss'
 
 const components = {
 	yLink,
-	yButton
+	yButton,
+	yPoptip
 }
 
 const install = function(Vue, opt = {}) {
@@ -16,7 +19,7 @@ const install = function(Vue, opt = {}) {
 	})
 	
 	Vue.$message = Vue.prototype.$message = yMessage
-
+	Vue.use(yTooltip)
 }
 
 
@@ -28,5 +31,6 @@ export default {
   install,
   yLink,
 	yButton,
-	yMessage
+	yMessage,
+	yPoptip
 }

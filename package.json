@@ -1,6 +1,6 @@
 {
   "name": "elyn-ui",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "",
   "main": "lib/elyn-ui.min.js",
   "style": "lib/elyn-ui.min.css",

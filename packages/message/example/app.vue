@@ -9,7 +9,7 @@
 
 <script>
 	import Vue from 'vue'
-	import yMessage from '../src/index.js'
+	import { yMessage } from '../src/index.js'
 	Vue.prototype.$message = yMessage;
 	
 	export default {

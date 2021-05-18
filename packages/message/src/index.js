@@ -6,22 +6,20 @@ import message from "./source/main.vue";
 let messageConstructor = Vue.extend(message); 
 let instance;
 
-const Message = function (options = {}) {
+const yMessage = function (options = {}) {
     instance = new messageConstructor({
 			data: options
 		})
-		console.log(options)
     document.body.appendChild(instance.$mount().$el);
 		instance.visible = true;
 };
 
 
 ["success", "error", "info", "warning"].forEach(type => {
-  Message[type] = options => {
+  yMessage[type] = options => {
     options.type = type;
-    return Message(options);
+    return yMessage(options)
   };
 });
 
-
-export default Message;
+export { yMessage }

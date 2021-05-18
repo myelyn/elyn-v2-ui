@@ -11,7 +11,10 @@ export default {
 		}
 	},
 	props: {
-		placement: String,
+		placement: {
+			type: String,
+			default: 'top'
+		},
 		reference: HTMLElement,
 		appendToBody: {
 			type: Boolean,
@@ -31,7 +34,7 @@ export default {
 		bindPopper () {
 			let referenceEl = this.referenceEl || this.reference || this.$refs.reference
 			
-			let popperEl = this.popperEl || tihs.$refs.popper
+			let popperEl = this.popperEl || this.$refs.popper
 
 			if (!referenceEl || !popperEl) return
 
@@ -39,8 +42,7 @@ export default {
 				placement: this.placement
 			}
 			const mergedOptions = merge(options, this.popperOptions)
-			
-			this.popperInstance = new PopperJS(this.referenceEl, this.popperEl, mergedOptions)
+			this.popperInstance = new PopperJS(referenceEl, popperEl, mergedOptions)
 		},
 		updateElementHandler () {
 			!this.popperInstance && this.bindPopper()

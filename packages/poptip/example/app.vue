@@ -17,8 +17,8 @@
 </template>
 
 <script>
-	import yPoptip from '../src/index.js'
-	import yButton from '../../button/src/index.js'
+	import { yPoptip } from '../src/index.js'
+	import { yButton } from '../../button/src/index.js'
 	
 	export default {
 		components: { yPoptip, yButton },

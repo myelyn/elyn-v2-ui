@@ -10,10 +10,11 @@
 </template>
 
 <script>
-	import yButton from '../src/index.js'
+	import { yButton } from '../src/index.js'
 	
 	export default {
 		components: { yButton },
+		name: 'app',
 		data () {
 			return {
 				loading: true

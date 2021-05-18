@@ -4,4 +4,4 @@ yPoptip.install = function(Vue) {
 	Vue.component(yPoptip.name, yPoptip)
 }
 
-export default yPoptip
+export { yPoptip }

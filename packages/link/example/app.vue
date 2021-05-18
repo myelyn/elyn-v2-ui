@@ -6,7 +6,7 @@
 </template>
 
 <script>
-	import yLink from '../src/index.js'
+	import { yLink } from '../src/index.js'
 	
 	export default {
 		components: { yLink },

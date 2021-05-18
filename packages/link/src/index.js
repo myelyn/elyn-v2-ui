@@ -4,4 +4,4 @@ yLink.install = function(Vue) {
 	Vue.component(yLink.name, yLink)
 }
 
-export default yLink
+export { yLink }

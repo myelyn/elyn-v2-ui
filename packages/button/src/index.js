@@ -4,4 +4,4 @@ yButton.install = function(Vue) {
 	Vue.component(yButton.name, yButton)
 }
 
-export default yButton
+export { yButton }
